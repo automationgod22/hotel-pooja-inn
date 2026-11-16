@@ -1,0 +1,113 @@
+/* Hotel Pooja Inn Pandharpur - Custom Stylesheet */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Marcellus&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --font-serif: 'Cinzel', 'Marcellus', 'Noto Sans Devanagari', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  
+  --color-brand-gold: #c59228;
+  --color-brand-gold-light: #fef3c7;
+  --color-brand-saffron: #d97706;
+  --color-temple-red: #991b1b;
+  --color-bg-warm: #faf8f5;
+  --color-card-bg: #ffffff;
+  --color-text-main: #1c1917;
+  --color-text-muted: #57534e;
+  --color-border: #e7e5e4;
+  --color-wa-green: #15803d;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-warm);
+  color: var(--color-text-main);
+}
+
+h1, h2, h3, .font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Subtle devotional background pattern for hero and highlights */
+.temple-pattern {
+  background-color: #0f172a;
+  background-image: radial-gradient(rgba(197, 146, 40, 0.15) 1px, transparent 1px), radial-gradient(rgba(197, 146, 40, 0.08) 1px, #0f172a 1px);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #fef08a 0%, #f59e0b 50%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtle-gold-border {
+  border: 1px solid rgba(197, 146, 40, 0.3);
+}
+
+/* Glassmorphism panels */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(231, 229, 228, 0.8);
+}
+
+.glass-panel-dark {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(197, 146, 40, 0.25);
+}
+
+/* Sticky Action Bar on Mobile */
+.mobile-bottom-dock {
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Pulsing Badge for WhatsApp Bookings */
+@keyframes pulse-gentle {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.04);
+    opacity: 0.95;
+  }
+}
+
+.pulse-badge {
+  animation: pulse-gentle 2.5s infinite ease-in-out;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f5f5f4;
+}
+::-webkit-scrollbar-thumb {
+  background: #d6d3d1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a29e;
+}
+
+/* Print proposal styling */
+@media print {
+  #agency-pitch-bar,
+  .mobile-bottom-dock,
+  #mobile-menu-drawer,
+  nav {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Pitch Kit & Proposal | Hotel Pooja Inn Pandharpur</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-stone-100 text-stone-900 antialiased selection:bg-amber-100 selection:text-amber-900">
+
+  <!-- Pitch Top Banner -->
+  <div class="bg-slate-900 text-stone-300 py-3 px-4 border-b border-stone-800 text-xs">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+        <span class="font-bold text-white uppercase tracking-wider">Agency Closer Toolkit</span>
+        <span class="text-stone-500">|</span>
+        <span>Prepared for: <strong>Owner & General Manager, Hotel Pooja Inn Pandharpur</strong></span>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="index.html" class="bg-amber-600 hover:bg-amber-700 text-white font-bold px-3 py-1 rounded transition-colors flex items-center gap-1">
+          <span>View Live Client Website</span>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-5xl mx-auto px-4 py-10 space-y-12">
+
+    <!-- Header Section -->
+    <div class="bg-white rounded-3xl p-8 sm:p-10 shadow-sm border border-stone-200">
+      <div class="inline-block bg-amber-100 text-amber-900 text-xs font-bold px-3 py-1 rounded-full mb-3">
+        PROFIT OPTIMIZATION & DIRECT REVENUE STRATEGY
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-serif font-black text-stone-900 tracking-tight leading-tight mb-4">
+        How Hotel Pooja Inn Can Save ₹3,00,000+ Every Year and Own Its Guest Relationships
+      </h1>
+      <p class="text-stone-600 text-sm sm:text-base leading-relaxed max-w-3xl">
+        Every week, pilgrims and families search for <em>"Hotels in Pandharpur near Vitthal Temple with car parking"</em>. Right now, MakeMyTrip, Goibibo, and Agoda take <strong>18% to 25% commission</strong> on every booking. This custom website gives Hotel Pooja Inn a 100% direct booking engine via WhatsApp and Phone.
+      </p>
+    </div>
+
+    <!-- Interactive Commission Savings ROI Calculator -->
+    <div class="bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 rounded-3xl p-8 sm:p-10 text-white shadow-xl border border-indigo-500/20">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-slate-800">
+        <div>
+          <span class="text-amber-400 font-bold text-xs uppercase tracking-wider">Live ROI Simulator</span>
+          <h2 class="text-2xl font-serif font-black text-white mt-1">OTA Commission Loss vs Direct Bookings</h2>
+        </div>
+        <div class="bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-xs font-bold px-3 py-1.5 rounded-lg flex items-center gap-1.5">
+          <span>0% Commission on Direct WhatsApp Orders</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 pt-8 items-center">
+        <!-- Controls -->
+        <div class="lg:col-span-6 space-y-6">
+          <div>
+            <div class="flex justify-between text-xs font-semibold mb-2">
+              <span class="text-stone-300">Total Bookings per Month (Rooms × Nights):</span>
+              <span class="text-amber-400 font-mono text-sm" id="calc-bookings-val">80 Bookings</span>
+            </div>
+            <input type="range" id="calc-bookings" min="20" max="250" value="80" step="5" class="w-full accent-amber-500">
+          </div>
+
+          <div>
+            <div class="flex justify-between text-xs font-semibold mb-2">
+              <span class="text-stone-300">Average Room Price:</span>
+              <span class="text-amber-400 font-mono text-sm" id="calc-rate-val">₹2,200 / night</span>
+            </div>
+            <input type="range" id="calc-rate" min="1200" max="4000" value="2200" step="100" class="w-full accent-amber-500">
+          </div>
+
+          <div>
+            <div class="flex justify-between text-xs font-semibold mb-2">
+              <span class="text-stone-300">OTA Commission Cut (MakeMyTrip / Agoda / Goibibo):</span>
+              <span class="text-amber-400 font-mono text-sm" id="calc-comm-val">20%</span>
+            </div>
+            <input type="range" id="calc-comm" min="15" max="25" value="20" step="1" class="w-full accent-amber-500">
+          </div>
+        </div>
+
+        <!-- Result Card -->
+        <div class="lg:col-span-6 bg-slate-800/90 border border-slate-700/80 rounded-2xl p-6 text-center space-y-4">
+          <span class="text-xs text-stone-400 uppercase tracking-wider block">Estimated Money Lost to OTAs Every Month</span>
+          <div class="text-4xl sm:text-5xl font-mono font-black text-rose-400" id="calc-loss-monthly">
+            ₹35,200
+          </div>
+          <div class="text-xs text-stone-300">
+            That's <strong class="text-amber-400 text-sm font-mono" id="calc-loss-yearly">₹4,22,400</strong> lost out of the owner's pocket every single year!
+          </div>
+
+          <div class="pt-4 border-t border-slate-700/60 flex items-center justify-between text-xs">
+            <span class="text-stone-400">Website Cost:</span>
+            <span class="text-emerald-400 font-bold">One-time investment</span>
+          </div>
+          <div class="bg-emerald-950/60 border border-emerald-500/30 text-emerald-300 text-xs p-3 rounded-xl font-medium">
+            💡 Even converting just <strong>15 direct bookings/month</strong> pays for this entire website in Month 1!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6 Unique Selling Points of this Website for Hotel Pooja Inn -->
+    <div class="bg-white rounded-3xl p-8 sm:p-10 shadow-sm border border-stone-200">
+      <h2 class="text-2xl font-serif font-black text-stone-900 mb-2">Why This Specific Website Closes Bookings</h2>
+      <p class="text-stone-600 text-xs sm:text-sm mb-8">Crafted specifically for the realities of Pandharpur pilgrimage visitors:</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <div class="flex items-start gap-4 p-4 rounded-xl bg-stone-50 border border-stone-200">
+          <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center shrink-0">
+            💬
+          </div>
+          <div>
+            <h3 class="font-bold text-sm text-stone-900 mb-1">Instant 1-Click WhatsApp Booking Engine</h3>
+            <p class="text-xs text-stone-600 leading-relaxed">
+              Pilgrims in India hate complex login screens and passwords. With this site, dates, room type, and guest count are packaged into a ready WhatsApp message sent straight to the owner's phone.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 p-4 rounded-xl bg-stone-50 border border-stone-200">
+          <div class="w-10 h-10 rounded-lg bg-amber-100 text-amber-800 font-bold flex items-center justify-center shrink-0">
+            🚩
+          </div>
+          <div>
+            <h3 class="font-bold text-sm text-stone-900 mb-1">Complete Bilingual Support (मराठी + English)</h3>
+            <p class="text-xs text-stone-600 leading-relaxed">
+              Devotees from rural Maharashtra and elderly warkaris can toggle the entire website to शुद्ध मराठी with 1 click. Demonstrates immense respect for local culture and makes booking effortless.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 p-4 rounded-xl bg-stone-50 border border-stone-200">
+          <div class="w-10 h-10 rounded-lg bg-amber-100 text-amber-800 font-bold flex items-center justify-center shrink-0">
+            🚗
+          </div>
+          <div>
+            <h3 class="font-bold text-sm text-stone-900 mb-1">Emphasizes Private Safe Parking (Huge Problem in Pandharpur)</h3>
+            <p class="text-xs text-stone-600 leading-relaxed">
+              Pandharpur town is notorious for traffic jams and zero parking near the temple. Showcasing Hotel Pooja Inn's safe, on-site parking on K.B.P. College Road converts car-traveling families instantly.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 p-4 rounded-xl bg-stone-50 border border-stone-200">
+          <div class="w-10 h-10 rounded-lg bg-amber-100 text-amber-800 font-bold flex items-center justify-center shrink-0">
+            🛕
+          </div>
+          <div>
+            <h3 class="font-bold text-sm text-stone-900 mb-1">Temple Aarti Schedule & Local Guide</h3>
+            <p class="text-xs text-stone-600 leading-relaxed">
+              By offering the daily Kakad Aarti, Nitya Pooja, and Shej Aarti schedules right on the website, guests bookmark the page and share it with friends and family traveling to Pandharpur.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 3 Turnkey Package Offerings (Ready to pitch to client) -->
+    <div class="bg-white rounded-3xl p-8 sm:p-10 shadow-sm border border-stone-200">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-xs font-bold text-amber-700 uppercase tracking-wider">Investment Packages</span>
+        <h2 class="text-2xl sm:text-3xl font-serif font-black text-stone-900 mt-1">Recommended Agency Pricing Tiers</h2>
+        <p class="text-stone-600 text-xs sm:text-sm mt-1">Choose the package to propose based on the hotel owner's budget:</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Starter Tier -->
+        <div class="border border-stone-200 rounded-2xl p-6 flex flex-col justify-between hover:border-stone-400 transition-colors">
+          <div>
+            <h3 class="font-bold text-base text-stone-900">Direct Starter</h3>
+            <p class="text-xs text-stone-500 mb-4">Essential direct booking setup</p>
+            <div class="text-2xl font-serif font-black text-stone-900 mb-4">
+              ₹12,999 <span class="text-xs font-normal text-stone-500">one-time</span>
+            </div>
+            <ul class="space-y-2 text-xs text-stone-600 mb-6">
+              <li class="flex items-center gap-2">✓ Mobile-first fast website</li>
+              <li class="flex items-center gap-2">✓ WhatsApp Direct Booking Engine</li>
+              <li class="flex items-center gap-2">✓ Tap-to-call mobile integration</li>
+              <li class="flex items-center gap-2">✓ Google Map & location integration</li>
+              <li class="flex items-center gap-2">✓ 1-year high-speed hosting included</li>
+            </ul>
+          </div>
+          <button class="w-full bg-stone-100 hover:bg-stone-200 text-stone-800 text-xs font-bold py-2.5 rounded-xl transition-colors">
+            Pitch Starter Option
+          </button>
+        </div>
+
+        <!-- Growth Tier (Recommended) -->
+        <div class="border-2 border-amber-600 rounded-2xl p-6 flex flex-col justify-between relative bg-amber-50/20 shadow-lg">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-600 text-white text-[10px] font-bold px-3 py-0.5 rounded-full uppercase tracking-wider">
+            Most Popular & High Value
+          </div>
+          <div>
+            <h3 class="font-bold text-base text-stone-900">Hospitality Growth</h3>
+            <p class="text-xs text-stone-500 mb-4">Everything needed to dominate Pandharpur</p>
+            <div class="text-2xl font-serif font-black text-amber-700 mb-4">
+              ₹24,999 <span class="text-xs font-normal text-stone-500">one-time</span>
+            </div>
+            <ul class="space-y-2 text-xs text-stone-700 mb-6 font-medium">
+              <li class="flex items-center gap-2">✓ <strong>Everything in Starter</strong></li>
+              <li class="flex items-center gap-2">✓ <strong>Full Marathi + English Bilingual Engine</strong></li>
+              <li class="flex items-center gap-2">✓ <strong>Custom Domain (.com / .in)</strong></li>
+              <li class="flex items-center gap-2">✓ <strong>Pandharpur Aarti & Temple Guide Section</strong></li>
+              <li class="flex items-center gap-2">✓ <strong>Printable QR Code Reception Standee Design</strong></li>
+              <li class="flex items-center gap-2">✓ <strong>Google Business Profile Optimization</strong></li>
+              <li class="flex items-center gap-2">✓ 1 Year Free Content Updates & Support</li>
+            </ul>
+          </div>
+          <button class="w-full bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold py-2.5 rounded-xl shadow transition-colors">
+            Pitch Growth Package (Recommended)
+          </button>
+        </div>
+
+        <!-- VIP Tier -->
+        <div class="border border-stone-200 rounded-2xl p-6 flex flex-col justify-between hover:border-stone-400 transition-colors">
+          <div>
+            <h3 class="font-bold text-base text-stone-900">Market Leader VIP</h3>
+            <p class="text-xs text-stone-500 mb-4">Complete digital dominance</p>
+            <div class="text-2xl font-serif font-black text-stone-900 mb-4">
+              ₹39,999 <span class="text-xs font-normal text-stone-500">one-time</span>
+            </div>
+            <ul class="space-y-2 text-xs text-stone-600 mb-6">
+              <li class="flex items-center gap-2">✓ Everything in Growth Tier</li>
+              <li class="flex items-center gap-2">✓ Local SEO Rank Strategy for "Pandharpur Hotel"</li>
+              <li class="flex items-center gap-2">✓ Ashadhi / Kartiki Ekadashi Rush Campaign</li>
+              <li class="flex items-center gap-2">✓ Automated WhatsApp Inquiry Follow-up Bot</li>
+              <li class="flex items-center gap-2">✓ Priority 24/7 Agency Tech Support</li>
+            </ul>
+          </div>
+          <button class="w-full bg-stone-100 hover:bg-stone-200 text-stone-800 text-xs font-bold py-2.5 rounded-xl transition-colors">
+            Pitch VIP Option
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Word-for-Word Closing Scripts (English & Marathi) -->
+    <div class="bg-white rounded-3xl p-8 sm:p-10 shadow-sm border border-stone-200 space-y-6">
+      <h2 class="text-2xl font-serif font-black text-stone-900">Word-for-Word Closing Pitch Scripts</h2>
+      <p class="text-stone-600 text-xs sm:text-sm">Use these exact lines when speaking to the owner on the phone or in person:</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- Marathi Script (Crucial for Pandharpur client) -->
+        <div class="p-6 rounded-2xl bg-amber-50/60 border border-amber-200/80 space-y-3">
+          <span class="text-xs font-bold text-amber-800 uppercase tracking-wider block">🚩 मराठी संभाषण (Marathi Pitch)</span>
+          <div class="text-xs sm:text-sm text-stone-800 leading-relaxed font-serif space-y-2 italic">
+            <p>"नमस्कार मालक, मी तुमच्या हॉटेल पूजा इन (Hotel Pooja Inn) चे गुगलवर रेटिंग आणि रिव्ह्यूज पाहिले – भाविकांचा अनुभव खूप छान आहे."</p>
+            <p>"पण मला दिसलं की तुमचे बहुतेक ग्राहक मेकमायट्रिप किंवा गोआयबिबोवरून बुक करतात, जिथे तुम्हाला प्रत्येक रूमवर १८% ते २५% कमिशन द्यावं लागतं. महिन्याला तुमचे २५,००० ते ४०,००० रुपये फक्त कमिशनमध्ये जात आहेत."</p>
+            <p>"मी तुमच्या हॉटेलसाठी एक खास वेबसाइट तयार केली आहे – ज्यामध्ये भाविक एका क्लिकवर थेट तुमच्या व्हॉट्सॲपवर बुकिंग करू शकतात. शिवाय ही वेबसाइट पूर्णपणे मराठी आणि इंग्रजी दोन्ही भाषेत आहे, जेणेकरून महाराष्ट्रातील कोणत्याही भाविकाला बुकिंग करणे अगदी सोपे जाईल."</p>
+            <p>"मी तुम्हाला ही वेबसाइट लाईव्ह दाखवतो, आवडली तरच आपण पुढे बोलू. काय म्हणता?"</p>
+          </div>
+        </div>
+
+        <!-- English Script -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+          <span class="text-xs font-bold text-slate-700 uppercase tracking-wider block">💼 English / Meeting Script</span>
+          <div class="text-xs sm:text-sm text-stone-800 leading-relaxed space-y-2 italic">
+            <p>"Hello Sir, I noticed Hotel Pooja Inn is rated 4.2★ with great reviews on cleanliness and parking. However, you're currently dependent on OTAs like MakeMyTrip and Booking.com who take up to 25% of your margins."</p>
+            <p>"If you do 80 bookings a month at ₹2,200, that’s over ₹35,000 lost to third-party commission every month. Over a year, that is ₹4 Lakhs out of your pocket."</p>
+            <p>"I have already built a live, working demo website tailored specifically for Hotel Pooja Inn. It features 1-click WhatsApp bookings with instant tariff calculations, temple aarti timings, car parking highlights, and a full Marathi/English switch."</p>
+            <p>"Even if this brings you just 10 direct bookings a month, the website pays for itself in the very first month. Let me show you the live demo on my phone right now."</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Objection handling cheat sheet -->
+      <div class="pt-4 border-t border-stone-200">
+        <h4 class="font-bold text-sm text-stone-900 mb-3">Objection Handlers (When the owner hesitates):</h4>
+        <div class="space-y-3 text-xs text-stone-700">
+          <div class="p-3 bg-stone-50 rounded-xl">
+            <strong>Owner: "आम्हाला आधीच Justdial किंवा MakeMyTrip वरून कॉल्स येतात."</strong><br>
+            <span class="text-emerald-700 font-medium">Answer:</span> "अगदी बरोबर साहेब, पण Justdial आणि OTAs वर तुमचा प्रतिस्पर्धी हॉटेलही बाजूलाच दिसतो. तुमच्या स्वतःच्या वेबसाइटवर फक्त तुमचंच हॉटेल दिसतं, भाविक थेट तुम्हाला पैसे देतात आणि कमिशन शून्य राहतं!"
+          </div>
+          <div class="p-3 bg-stone-50 rounded-xl">
+            <strong>Owner: "वेबसाइट कशी चालवायची मला माहिती नाही."</strong><br>
+            <span class="text-emerald-700 font-medium">Answer:</span> "तुम्हाला काहीही शिकायची गरज नाही. भाविकाने वेबसाइटवर तारीख आणि रूम निवडली की थेट तुमच्या वैयक्तिक व्हॉट्सॲपवर मेसेज येतो. तुम्ही फक्त मेसेज पाहून रूम कन्फर्म करायची!"
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Actions -->
+    <div class="text-center pt-4">
+      <a href="index.html" class="inline-flex items-center gap-2 bg-amber-600 hover:bg-amber-700 text-white font-bold text-sm px-8 py-4 rounded-2xl shadow-xl transition-all">
+        <span>Launch Hotel Pooja Inn Live Website Demo</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+      </a>
+    </div>
+
+  </div>
+
+  <script>
+    // Live Simulator Calculator
+    const bookingsInput = document.getElementById('calc-bookings');
+    const rateInput = document.getElementById('calc-rate');
+    const commInput = document.getElementById('calc-comm');
+
+    const bookingsVal = document.getElementById('calc-bookings-val');
+    const rateVal = document.getElementById('calc-rate-val');
+    const commVal = document.getElementById('calc-comm-val');
+
+    const lossMonthly = document.getElementById('calc-loss-monthly');
+    const lossYearly = document.getElementById('calc-loss-yearly');
+
+    function updateCalc() {
+      const b = parseInt(bookingsInput.value);
+      const r = parseInt(rateInput.value);
+      const c = parseInt(commInput.value) / 100;
+
+      bookingsVal.textContent = `${b} Bookings`;
+      rateVal.textContent = `₹${r.toLocaleString('en-IN')} / night`;
+      commVal.textContent = `${commInput.value}%`;
+
+      const monthlyRevenue = b * r;
+      const monthlyLoss = Math.round(monthlyRevenue * c);
+      const yearlyLoss = monthlyLoss * 12;
+
+      lossMonthly.textContent = `₹${monthlyLoss.toLocaleString('en-IN')}`;
+      lossYearly.textContent = `₹${yearlyLoss.toLocaleString('en-IN')}`;
+    }
+
+    bookingsInput.addEventListener('input', updateCalc);
+    rateInput.addEventListener('input', updateCalc);
+    commInput.addEventListener('input', updateCalc);
+
+    updateCalc();
+  </script>
+</body>
+</html>

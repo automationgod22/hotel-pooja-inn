@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Hotel Pooja Inn Pandharpur | Clean & Serene Pilgrim Stay near Vitthal Mandir</title>
+  <meta name="description" content="Official website of Hotel Pooja Inn, Pandharpur. Clean AC/Non-AC rooms, 24/7 hot water, free car parking, lift facility, just 5 minutes from Shri Vitthal-Rukmini Mandir. Book direct on WhatsApp.">
+  <meta name="keywords" content="Hotel Pooja Inn Pandharpur, hotels in Pandharpur near Vitthal temple, Pandharpur lodging, Pandharpur hotel with parking, Vitthal mandir stay">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              gold: '#c59228',
+              saffron: '#d97706',
+              maroon: '#991b1b',
+              navy: '#0f172a',
+              stone: '#faf8f5',
+              green: '#15803d'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-stone-50 text-stone-900 antialiased selection:bg-amber-100 selection:text-amber-900 pb-20 md:pb-0">
+
+  <!-- ========================================================================= -->
+  <!-- 1. FREELANCER CLIENT PITCH BAR (Can be toggled or closed during demo) -->
+  <!-- ========================================================================= -->
+  <aside id="agency-pitch-bar" class="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white border-b border-indigo-500/30 text-xs py-2 px-4 shadow-lg sticky top-0 z-50 transition-all">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center gap-1.5 bg-amber-500/20 text-amber-300 font-bold px-2 py-0.5 rounded border border-amber-500/40">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+          CLIENT DEMO MODE
+        </span>
+        <span class="hidden sm:inline text-stone-300">
+          Custom pitch website ready for <strong>Hotel Pooja Inn</strong> management.
+        </span>
+        <span class="hidden md:inline bg-emerald-950/80 text-emerald-300 px-2 py-0.5 rounded border border-emerald-500/40 font-mono">
+          Save ₹25,000 - ₹40,000/mo on OTA commissions!
+        </span>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="pitch-kit.html" class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold px-3 py-1 rounded shadow transition-all flex items-center gap-1">
+          <span>Open Full Pitch Deck & Script</span>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+        <button id="toggle-pitch-bar" class="text-stone-400 hover:text-white px-1.5 py-0.5 rounded hover:bg-slate-800" title="Hide this bar">
+          ✕
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========================================================================= -->
+  <!-- 2. TOP DEVOTIONAL & QUICK CONTACT BAR -->
+  <!-- ========================================================================= -->
+  <header class="bg-slate-900 text-stone-300 text-xs border-b border-stone-800">
+    <div class="max-w-7xl mx-auto px-4 py-2 flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-3">
+        <span class="text-amber-400 font-serif font-bold tracking-wide" data-i18n="top_tagline">
+          ॥ जय हरी विठ्ठल ॥ Welcome to Hotel Pooja Inn, Pandharpur
+        </span>
+        <span class="hidden lg:inline-block text-stone-600">|</span>
+        <span class="hidden lg:inline-flex items-center gap-1 text-stone-300">
+          <svg class="w-3.5 h-3.5 text-amber-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+          <span data-i18n="badge_temple_dist">1.8 km from Vitthal Mandir (5 Mins)</span>
+        </span>
+      </div>
+
+      <div class="flex items-center gap-4 ml-auto">
+        <!-- Direct Call -->
+        <a href="tel:919422678910" class="hover:text-amber-400 flex items-center gap-1.5 transition-colors hotel-phone-link">
+          <svg class="w-3.5 h-3.5 text-amber-500" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"/></svg>
+          <span class="font-medium hotel-phone-text">+91 94226 78910</span>
+        </a>
+
+        <!-- Language Switcher Button -->
+        <button id="lang-toggle-btn" class="bg-stone-800 hover:bg-stone-700 text-stone-200 border border-stone-700 px-2.5 py-1 rounded flex items-center gap-1.5 transition-all font-semibold">
+          <svg class="w-3.5 h-3.5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>
+          <span class="lang-label-indicator">मराठी (MR)</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- 3. MAIN NAVBAR -->
+  <!-- ========================================================================= -->
+  <nav class="bg-white/95 backdrop-blur-md sticky top-0 md:top-8 z-40 border-b border-stone-200 shadow-sm transition-all">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <!-- Hotel Brand -->
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-amber-600 flex items-center justify-center text-white shadow-md font-serif font-black text-lg">
+          P
+        </div>
+        <div>
+          <div class="font-serif font-black text-lg sm:text-xl text-stone-900 tracking-tight leading-none">
+            HOTEL POOJA INN
+          </div>
+          <div class="text-[10px] tracking-widest uppercase text-amber-700 font-bold mt-0.5">
+            Pandharpur • पवित्र मुक्काम
+          </div>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <div class="hidden md:flex items-center gap-6 text-sm font-medium text-stone-700">
+        <a href="#booking-engine" class="hover:text-amber-600 transition-colors" data-i18n="nav_home">Home</a>
+        <a href="#rooms-section" class="hover:text-amber-600 transition-colors" data-i18n="nav_rooms">Rooms & Tariff</a>
+        <a href="#amenities-section" class="hover:text-amber-600 transition-colors" data-i18n="nav_amenities">Amenities</a>
+        <a href="#darshan-section" class="hover:text-amber-600 transition-colors" data-i18n="nav_darshan">Temple Guide</a>
+        <a href="#reviews-section" class="hover:text-amber-600 transition-colors" data-i18n="nav_reviews">Reviews</a>
+        <a href="#location-section" class="hover:text-amber-600 transition-colors" data-i18n="nav_location">Location</a>
+        <a href="pitch-kit.html" class="text-indigo-600 hover:text-indigo-800 font-semibold" data-i18n="nav_pitch">Pitch Deck</a>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-2">
+        <a href="https://wa.me/919422678910?text=Hello%20Hotel%20Pooja%20Inn%20Pandharpur,%20I%20would%20like%20to%20inquire%20about%20room%20availability." target="_blank" class="hidden sm:inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs px-3.5 py-2.5 rounded-xl shadow transition-all hotel-whatsapp-link">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span data-i18n="nav_book_now">Book on WhatsApp</span>
+        </a>
+
+        <!-- Mobile Menu Hamburger -->
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-stone-700 hover:bg-stone-100" aria-label="Open Navigation">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <aside id="mobile-menu-drawer" class="fixed inset-y-0 right-0 w-72 bg-white shadow-2xl z-50 transform translate-x-full transition-transform duration-300 p-6 flex flex-col justify-between">
+    <div>
+      <div class="flex items-center justify-between pb-4 border-b border-stone-200">
+        <span class="font-serif font-bold text-stone-900 text-lg">Hotel Pooja Inn</span>
+        <button id="mobile-menu-close" class="p-1 rounded-md text-stone-500 hover:text-stone-900">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="py-4 space-y-3 font-medium text-stone-700">
+        <a href="#booking-engine" class="mobile-nav-link block py-2 hover:text-amber-600" data-i18n="nav_home">Home</a>
+        <a href="#rooms-section" class="mobile-nav-link block py-2 hover:text-amber-600" data-i18n="nav_rooms">Rooms & Tariff</a>
+        <a href="#amenities-section" class="mobile-nav-link block py-2 hover:text-amber-600" data-i18n="nav_amenities">Amenities</a>
+        <a href="#darshan-section" class="mobile-nav-link block py-2 hover:text-amber-600" data-i18n="nav_darshan">Temple Guide</a>
+        <a href="#reviews-section" class="mobile-nav-link block py-2 hover:text-amber-600" data-i18n="nav_reviews">Reviews</a>
+        <a href="#location-section" class="mobile-nav-link block py-2 hover:text-amber-600" data-i18n="nav_location">Location</a>
+        <a href="pitch-kit.html" class="mobile-nav-link block py-2 text-indigo-600 font-bold" data-i18n="nav_pitch">Agency Pitch Deck</a>
+      </div>
+    </div>
+    <div class="pt-4 border-t border-stone-200 space-y-2">
+      <button id="mobile-lang-btn" class="w-full bg-stone-100 text-stone-800 text-xs py-2 rounded-lg font-semibold flex items-center justify-center gap-1.5">
+        <span class="lang-label-indicator">मराठी (MR)</span>
+      </button>
+      <a href="tel:919422678910" class="w-full bg-slate-900 text-white text-xs py-2.5 rounded-lg font-semibold flex items-center justify-center gap-2">
+        <span data-i18n="nav_call">Call Hotel</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- ========================================================================= -->
+  <!-- 4. HERO SECTION WITH DEVOTIONAL ATMOSPHERE & INSTANT VALUE -->
+  <!-- ========================================================================= -->
+  <section class="relative temple-pattern text-white pt-12 pb-20 md:pt-16 md:pb-28 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <!-- Left Column: Copy & Trust Highlights -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 bg-amber-500/20 text-amber-300 text-xs font-semibold px-3 py-1.5 rounded-full border border-amber-500/30">
+            <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <span>Verified 4.2★ Pilgrim Stay • Isbavi, Pandharpur</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-serif font-black tracking-tight leading-tight text-stone-100" data-i18n="hero_title">
+            Serene & Comfortable Stay in the Holy Abode of Lord Vitthal
+          </h1>
+
+          <p class="text-stone-300 text-sm sm:text-base leading-relaxed max-w-2xl font-light" data-i18n="hero_subtitle">
+            Experience peaceful hospitality just 5 minutes from Shri Vitthal-Rukmini Mandir. Clean AC/Non-AC rooms, spacious parking, and caring service for pilgrims & families.
+          </p>
+
+          <!-- 4 Pilgrim Trust Badges -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+            <div class="bg-slate-800/80 border border-slate-700/60 p-3 rounded-xl backdrop-blur-sm">
+              <div class="text-amber-400 font-bold text-lg">1.8 km</div>
+              <div class="text-[11px] text-stone-300">Vitthal Mandir (5 Min)</div>
+            </div>
+            <div class="bg-slate-800/80 border border-slate-700/60 p-3 rounded-xl backdrop-blur-sm">
+              <div class="text-amber-400 font-bold text-lg">Safe Car</div>
+              <div class="text-[11px] text-stone-300">Private Parking</div>
+            </div>
+            <div class="bg-slate-800/80 border border-slate-700/60 p-3 rounded-xl backdrop-blur-sm">
+              <div class="text-amber-400 font-bold text-lg">24/7 Hot</div>
+              <div class="text-[11px] text-stone-300">Water for Kakad Aarti</div>
+            </div>
+            <div class="bg-slate-800/80 border border-slate-700/60 p-3 rounded-xl backdrop-blur-sm">
+              <div class="text-amber-400 font-bold text-lg">Lift / 🛗</div>
+              <div class="text-[11px] text-stone-300">For Senior Devotees</div>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="flex flex-wrap items-center gap-3 pt-2">
+            <a href="#booking-engine" class="bg-amber-600 hover:bg-amber-700 text-white font-semibold text-sm px-6 py-3 rounded-xl shadow-lg shadow-amber-600/30 transition-all flex items-center gap-2">
+              <span data-i18n="hero_cta_book">Direct Booking (Best Price)</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+            <a href="tel:919422678910" class="bg-slate-800/90 hover:bg-slate-700 border border-slate-600 text-stone-200 font-semibold text-sm px-5 py-3 rounded-xl transition-all flex items-center gap-2 hotel-phone-link">
+              <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"/></svg>
+              <span data-i18n="hero_cta_call">Call for Instant Availability</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive Quick Booking & Quote Engine -->
+        <div class="lg:col-span-5" id="booking-engine">
+          <div class="bg-white text-stone-900 rounded-3xl p-6 sm:p-7 shadow-2xl border border-stone-200 relative overflow-hidden">
+            <div class="absolute -top-10 -right-10 w-32 h-32 bg-amber-500/10 rounded-full blur-2xl pointer-events-none"></div>
+
+            <div class="flex items-center justify-between pb-4 border-b border-stone-100 mb-4">
+              <div>
+                <h2 class="font-serif font-black text-lg text-stone-900" data-i18n="booking_title">
+                  Quick Room Availability & Quote
+                </h2>
+                <p class="text-xs text-stone-500">Direct booking privilege • 0% portal commission</p>
+              </div>
+              <span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2 py-1 rounded-md">
+                BEST RATE
+              </span>
+            </div>
+
+            <form id="direct-booking-form" class="space-y-4">
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-xs font-semibold text-stone-700 mb-1" data-i18n="lbl_checkin">Check-In</label>
+                  <input type="date" id="checkin-date" required class="w-full text-xs bg-stone-50 border border-stone-300 rounded-xl px-3 py-2.5 focus:ring-2 focus:ring-amber-500 focus:outline-none">
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-stone-700 mb-1" data-i18n="lbl_checkout">Check-Out</label>
+                  <input type="date" id="checkout-date" required class="w-full text-xs bg-stone-50 border border-stone-300 rounded-xl px-3 py-2.5 focus:ring-2 focus:ring-amber-500 focus:outline-none">
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-stone-700 mb-1" data-i18n="lbl_room_type">Room Category</label>
+                <select id="room-select" class="w-full text-xs bg-stone-50 border border-stone-300 rounded-xl px-3 py-2.5 focus:ring-2 focus:ring-amber-500 focus:outline-none">
+                  <option value="deluxe-ac">Classic Deluxe AC Room (₹2,199/night)</option>
+                  <option value="family-4bed-ac">Executive 4-Bed AC Family Suite (₹3,499/night)</option>
+                  <option value="triple-ac">Super Deluxe 3-Bed AC (₹2,799/night)</option>
+                  <option value="standard-non-ac">Economy Standard Non-AC (₹1,399/night)</option>
+                </select>
+              </div>
+
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-xs font-semibold text-stone-700 mb-1" data-i18n="lbl_guests">Guests</label>
+                  <select id="guests-count" class="w-full text-xs bg-stone-50 border border-stone-300 rounded-xl px-3 py-2.5 focus:ring-2 focus:ring-amber-500 focus:outline-none">
+                    <option value="1 Adult">1 Adult</option>
+                    <option value="2 Adults" selected>2 Adults</option>
+                    <option value="3 Adults">3 Adults</option>
+                    <option value="4 Adults (Family)">4 Adults (Family)</option>
+                    <option value="5+ Adults (Warkari Group)">5+ Adults (Group)</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-stone-700 mb-1">Your Name</label>
+                  <input type="text" id="guest-name" placeholder="E.g. Ramesh Patil" required class="w-full text-xs bg-stone-50 border border-stone-300 rounded-xl px-3 py-2.5 focus:ring-2 focus:ring-amber-500 focus:outline-none">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-xs font-semibold text-stone-700 mb-1">WhatsApp / Phone Number</label>
+                  <input type="tel" id="guest-phone" placeholder="98XXXXXXXX" class="w-full text-xs bg-stone-50 border border-stone-300 rounded-xl px-3 py-2.5 focus:ring-2 focus:ring-amber-500 focus:outline-none">
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-stone-700 mb-1">Special Need (Optional)</label>
+                  <input type="text" id="guest-request" placeholder="Early 4 AM Check-in, Lift req." class="w-full text-xs bg-stone-50 border border-stone-300 rounded-xl px-3 py-2.5 focus:ring-2 focus:ring-amber-500 focus:outline-none">
+                </div>
+              </div>
+
+              <!-- Live Estimate Box -->
+              <div id="live-quote-box" class="bg-amber-50/80 border border-amber-200/80 rounded-2xl p-3.5 flex items-center justify-between">
+                <div>
+                  <span class="text-[11px] text-stone-500 block">Estimated Tariff (<span id="quote-nights-count">1 Night</span>)</span>
+                  <div class="text-xl font-bold font-serif text-amber-800" id="quote-estimated-price">₹2,199</div>
+                </div>
+                <div class="text-right">
+                  <span class="text-[10px] font-semibold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full block" id="quote-direct-saving">
+                    Save ₹550 vs Booking Portals
+                  </span>
+                  <span class="text-[10px] text-stone-400">Pay at check-in / UPI</span>
+                </div>
+              </div>
+
+              <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm py-3 px-4 rounded-xl shadow-lg shadow-emerald-600/30 transition-all flex items-center justify-center gap-2">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                <span data-i18n="btn_check_quote">Send Inquiry via WhatsApp</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 5. WHY DEVOTEES CHOOSE HOTEL POOJA INN (PANDHARPUR-SPECIFIC HIGHLIGHTS) -->
+  <!-- ========================================================================= -->
+  <section id="amenities-section" class="py-16 md:py-24 bg-white border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-serif font-black text-stone-900 mb-3" data-i18n="why_title">
+          Why Devotees & Families Choose Hotel Pooja Inn
+        </h2>
+        <p class="text-stone-600 text-sm sm:text-base" data-i18n="why_subtitle">
+          Designed to provide maximum comfort, peace of mind, and convenience during your sacred Pandharpur Darshan Yatra.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Feature 1: Proximity -->
+        <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200 hover:border-amber-400 transition-all group">
+          <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-xl mb-4 group-hover:scale-110 transition-transform">
+            🛕
+          </div>
+          <h3 class="font-serif font-bold text-lg text-stone-900 mb-2" data-i18n="feat_temple_title">5 Mins to Vitthal Mandir</h3>
+          <p class="text-xs text-stone-600 leading-relaxed" data-i18n="feat_temple_desc">
+            Located on K.B.P. College Road, Isbavi — comfortably away from congested temple lanes with smooth 5-minute auto access.
+          </p>
+        </div>
+
+        <!-- Feature 2: Safe Car Parking -->
+        <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200 hover:border-amber-400 transition-all group">
+          <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-xl mb-4 group-hover:scale-110 transition-transform">
+            🚗
+          </div>
+          <h3 class="font-serif font-bold text-lg text-stone-900 mb-2" data-i18n="feat_parking_title">Safe & Free Car Parking</h3>
+          <p class="text-xs text-stone-600 leading-relaxed" data-i18n="feat_parking_desc">
+            Finding parking in Pandharpur is notoriously difficult. We offer spacious, gated on-site parking for cars and tourist buses.
+          </p>
+        </div>
+
+        <!-- Feature 3: 24/7 Hot Water -->
+        <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200 hover:border-amber-400 transition-all group">
+          <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-xl mb-4 group-hover:scale-110 transition-transform">
+            🚿
+          </div>
+          <h3 class="font-serif font-bold text-lg text-stone-900 mb-2" data-i18n="feat_hotwater_title">24/7 Geyser Hot Water</h3>
+          <p class="text-xs text-stone-600 leading-relaxed" data-i18n="feat_hotwater_desc">
+            Crucial for taking holy snan before 4:00 AM Kakad Aarti and holy dip at Chandrabhaga River.
+          </p>
+        </div>
+
+        <!-- Feature 4: Elevator / Lift -->
+        <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200 hover:border-amber-400 transition-all group">
+          <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-xl mb-4 group-hover:scale-110 transition-transform">
+            🛗
+          </div>
+          <h3 class="font-serif font-bold text-lg text-stone-900 mb-2" data-i18n="feat_lift_title">Elevator / Lift Facility</h3>
+          <p class="text-xs text-stone-600 leading-relaxed" data-i18n="feat_lift_desc">
+            Comfortable access to all floors for elderly warkaris, parents, and senior citizen pilgrims.
+          </p>
+        </div>
+
+        <!-- Feature 5: 100% Generator Backup -->
+        <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200 hover:border-amber-400 transition-all group">
+          <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-xl mb-4 group-hover:scale-110 transition-transform">
+            ⚡
+          </div>
+          <h3 class="font-serif font-bold text-lg text-stone-900 mb-2" data-i18n="feat_power_title">100% Power Generator Backup</h3>
+          <p class="text-xs text-stone-600 leading-relaxed" data-i18n="feat_power_desc">
+            Continuous power for lights, fans, and charging points during frequent municipal power cuts in peak rush season.
+          </p>
+        </div>
+
+        <!-- Feature 6: Local Pilgrim Guidance -->
+        <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200 hover:border-amber-400 transition-all group">
+          <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-xl mb-4 group-hover:scale-110 transition-transform">
+            🙏
+          </div>
+          <h3 class="font-serif font-bold text-lg text-stone-900 mb-2" data-i18n="feat_service_title">Pilgrim Assistance & Darshan Info</h3>
+          <p class="text-xs text-stone-600 leading-relaxed" data-i18n="feat_service_desc">
+            Helpful local staff to assist with temple timings, auto arrangement, pure satvik food recommendations, and travel guidance.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 6. ROOMS & TARIFF SHOWCASE (DYNAMICALLY FILTERABLE) -->
+  <!-- ========================================================================= -->
+  <section id="rooms-section" class="py-16 md:py-24 bg-stone-100/70 border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+        <div>
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-serif font-black text-stone-900 mb-2" data-i18n="rooms_title">
+            Our Clean & Spacious Rooms
+          </h2>
+          <p class="text-stone-600 text-sm" data-i18n="rooms_subtitle">
+            Sanitized daily with spotless linens, modern bathrooms, and all essential amenities for a restful pilgrimage.
+          </p>
+        </div>
+
+        <!-- Filter tabs -->
+        <div class="flex flex-wrap items-center gap-1.5 bg-stone-200/80 p-1 rounded-xl text-xs font-semibold">
+          <button onclick="renderRoomsGrid('all')" class="px-3 py-1.5 rounded-lg bg-white shadow-sm text-stone-900">All Rooms</button>
+          <button onclick="renderRoomsGrid('ac')" class="px-3 py-1.5 rounded-lg text-stone-600 hover:text-stone-900">AC Rooms</button>
+          <button onclick="renderRoomsGrid('family')" class="px-3 py-1.5 rounded-lg text-stone-600 hover:text-stone-900">Family 4-Bed</button>
+          <button onclick="renderRoomsGrid('non-ac')" class="px-3 py-1.5 rounded-lg text-stone-600 hover:text-stone-900">Budget Non-AC</button>
+        </div>
+      </div>
+
+      <!-- Rooms Grid Rendered by JS -->
+      <div id="rooms-grid-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Rendered by app.js -->
+      </div>
+
+      <!-- Extra Group Booking Callout -->
+      <div class="mt-12 bg-gradient-to-r from-amber-700 via-amber-800 to-amber-900 rounded-3xl p-6 sm:p-8 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="space-y-2">
+          <span class="inline-block bg-amber-500/30 text-amber-200 text-xs font-semibold px-2.5 py-0.5 rounded-full border border-amber-400/30">
+            WARKARI & PILGRIMAGE BUS GROUPS
+          </span>
+          <h3 class="text-xl sm:text-2xl font-serif font-bold">Traveling in a Group or Ashadhi / Kartiki Ekadashi?</h3>
+          <p class="text-xs sm:text-sm text-amber-100 max-w-xl font-light">
+            We provide special discounted block rates for family yatras, dindi mandals, and tour operators with multiple rooms and coach parking.
+          </p>
+        </div>
+        <a href="https://wa.me/919422678910?text=Hello%20Hotel%20Pooja%20Inn,%20I%20want%20to%20inquire%20about%20Group%20Booking%20for%20Pandharpur." target="_blank" class="bg-white hover:bg-stone-100 text-amber-900 font-bold text-xs sm:text-sm py-3 px-6 rounded-xl shadow transition-all shrink-0">
+          Inquire for Group Rates
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 7. PANDHARPUR DARSHAN GUIDE & TEMPLE TIMINGS -->
+  <!-- ========================================================================= -->
+  <section id="darshan-section" class="py-16 md:py-24 bg-white border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        
+        <!-- Left: Temple Aarti Timings -->
+        <div class="lg:col-span-6 space-y-6">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-amber-700">Vitthal Mandir Daily Schedule</span>
+            <h2 class="text-2xl sm:text-3xl font-serif font-black text-stone-900 mt-1" data-i18n="darshan_title">
+              Pandharpur Darshan Guide & Aarti Timings
+            </h2>
+            <p class="text-stone-600 text-xs sm:text-sm mt-1" data-i18n="darshan_subtitle">
+              Plan your sacred darshan smoothly with verified timings and nearby spiritual landmarks.
+            </p>
+          </div>
+
+          <!-- Dynamic Aarti Schedule List -->
+          <div id="aarti-timings-list" class="space-y-2.5">
+            <!-- Injected by app.js -->
+          </div>
+
+          <div class="p-4 rounded-xl bg-stone-50 border border-stone-200 text-xs text-stone-600">
+            <strong class="text-stone-900">Tip for Devotees:</strong> For Charansparsh darshan (touching Lord Vitthal's feet), queues can take 3 to 6 hours during Ekadashi and weekends. Mukh Darshan (glance darshan) is significantly faster (30-60 mins). Hotel Pooja Inn front desk provides live queue updates!
+          </div>
+        </div>
+
+        <!-- Right: Distances to Sacred Pandharpur Spots -->
+        <div class="lg:col-span-6 bg-stone-50 border border-stone-200 rounded-3xl p-6 sm:p-8">
+          <h3 class="text-xl font-serif font-bold text-stone-900 mb-2">Distance from Hotel Pooja Inn</h3>
+          <p class="text-xs text-stone-500 mb-6">Our location in Isbavi on K.B.P. College Road gives you easy connectivity:</p>
+
+          <div class="space-y-4">
+            
+            <div class="flex items-center justify-between pb-3 border-b border-stone-200">
+              <div class="flex items-center gap-3">
+                <span class="text-2xl">🛕</span>
+                <div>
+                  <div class="font-bold text-sm text-stone-900">Shri Vitthal-Rukmini Mandir</div>
+                  <div class="text-xs text-stone-500">Main Sanctum & Mahadwar</div>
+                </div>
+              </div>
+              <span class="bg-amber-100 text-amber-900 font-bold text-xs px-2.5 py-1 rounded-lg">1.8 km (5 min)</span>
+            </div>
+
+            <div class="flex items-center justify-between pb-3 border-b border-stone-200">
+              <div class="flex items-center gap-3">
+                <span class="text-2xl">🌊</span>
+                <div>
+                  <div class="font-bold text-sm text-stone-900">Chandrabhaga River & Pundalik Mandir</div>
+                  <div class="text-xs text-stone-500">Holy Snan Ghat</div>
+                </div>
+              </div>
+              <span class="bg-amber-100 text-amber-900 font-bold text-xs px-2.5 py-1 rounded-lg">1.6 km (4 min)</span>
+            </div>
+
+            <div class="flex items-center justify-between pb-3 border-b border-stone-200">
+              <div class="flex items-center gap-3">
+                <span class="text-2xl">🌸</span>
+                <div>
+                  <div class="font-bold text-sm text-stone-900">ISKCON Pandharpur Temple</div>
+                  <div class="text-xs text-stone-500">Gopalpur, scenic spiritual complex</div>
+                </div>
+              </div>
+              <span class="bg-amber-100 text-amber-900 font-bold text-xs px-2.5 py-1 rounded-lg">3.2 km (8 min)</span>
+            </div>
+
+            <div class="flex items-center justify-between pb-3 border-b border-stone-200">
+              <div class="flex items-center gap-3">
+                <span class="text-2xl">🚆</span>
+                <div>
+                  <div class="font-bold text-sm text-stone-900">Pandharpur Railway Station</div>
+                  <div class="text-xs text-stone-500">Direct trains to Pune, Mumbai, Solapur</div>
+                </div>
+              </div>
+              <span class="bg-amber-100 text-amber-900 font-bold text-xs px-2.5 py-1 rounded-lg">2.2 km (6 min)</span>
+            </div>
+
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <span class="text-2xl">🚌</span>
+                <div>
+                  <div class="font-bold text-sm text-stone-900">Chandrabhaga MSRTC Bus Stand</div>
+                  <div class="text-xs text-stone-500">Major bus connectivity</div>
+                </div>
+              </div>
+              <span class="bg-amber-100 text-amber-900 font-bold text-xs px-2.5 py-1 rounded-lg">1.2 km (3 min)</span>
+            </div>
+
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-stone-200 flex items-center justify-between">
+            <span class="text-xs text-stone-500">Auto-rickshaws available right outside hotel 24/7</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=17.6796458,75.3220648" target="_blank" class="text-amber-700 hover:text-amber-800 text-xs font-bold flex items-center gap-1">
+              <span>View Route on Maps</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 8. VERIFIED REVIEWS & SOCIAL PROOF -->
+  <!-- ========================================================================= -->
+  <section id="reviews-section" class="py-16 md:py-24 bg-stone-50 border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <div class="inline-flex items-center gap-1.5 text-amber-600 mb-2">
+          ★★★★★ <span class="text-xs font-bold text-stone-700">4.2 / 5.0 (280+ Reviews)</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-serif font-black text-stone-900 mb-2" data-i18n="reviews_title">
+          What Our Guests Say
+        </h2>
+        <p class="text-stone-600 text-xs sm:text-sm" data-i18n="reviews_subtitle">
+          Real experiences from pilgrims and families who stayed at Hotel Pooja Inn Pandharpur.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Review 1 -->
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-200 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="text-amber-500 text-sm">★★★★★</div>
+            <p class="text-xs sm:text-sm text-stone-700 italic leading-relaxed">
+              "We came from Pune with elderly parents for Vitthal Darshan. The hotel has a very smooth lift and 24/7 hot water, which made 4 AM Kakad aarti preparation very easy. Clean beds and very polite staff."
+            </p>
+          </div>
+          <div class="pt-4 border-t border-stone-100 flex items-center gap-3 mt-4">
+            <div class="w-9 h-9 rounded-full bg-amber-100 text-amber-800 font-bold flex items-center justify-center text-xs">
+              SK
+            </div>
+            <div>
+              <h4 class="text-xs font-bold text-stone-900">Sachin Kulkarni</h4>
+              <span class="text-[10px] text-stone-400">Pune • Family Darshan</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-200 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="text-amber-500 text-sm">★★★★★</div>
+            <p class="text-xs sm:text-sm text-stone-700 italic leading-relaxed">
+              "Parking in Pandharpur is a nightmare, but Hotel Pooja Inn has their own open dedicated parking where our Innova was completely safe. Mandir is just 5 mins by rickshaw. Highly recommended!"
+            </p>
+          </div>
+          <div class="pt-4 border-t border-stone-100 flex items-center gap-3 mt-4">
+            <div class="w-9 h-9 rounded-full bg-amber-100 text-amber-800 font-bold flex items-center justify-center text-xs">
+              MB
+            </div>
+            <div>
+              <h4 class="text-xs font-bold text-stone-900">Mahesh Bhosle</h4>
+              <span class="text-[10px] text-stone-400">Kolhapur • Visited by Car</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-200 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="text-amber-500 text-sm">★★★★★</div>
+            <p class="text-xs sm:text-sm text-stone-700 italic leading-relaxed">
+              "Very peaceful location on KBP college road away from temple noise. AC worked flawlessly and the bathroom was thoroughly sanitized. Direct WhatsApp booking was fast and smooth."
+            </p>
+          </div>
+          <div class="pt-4 border-t border-stone-100 flex items-center gap-3 mt-4">
+            <div class="w-9 h-9 rounded-full bg-amber-100 text-amber-800 font-bold flex items-center justify-center text-xs">
+              AD
+            </div>
+            <div>
+              <h4 class="text-xs font-bold text-stone-900">Anand Deshmukh</h4>
+              <span class="text-[10px] text-stone-400">Nashik • Pilgrimage Stay</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 9. INTERACTIVE LOCATION & GOOGLE MAPS DIRECTIONS -->
+  <!-- ========================================================================= -->
+  <section id="location-section" class="py-16 md:py-24 bg-white border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <!-- Info Column -->
+        <div class="lg:col-span-5 space-y-6">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-amber-700">Find Us Easily</span>
+            <h2 class="text-2xl sm:text-3xl font-serif font-black text-stone-900 mt-1" data-i18n="loc_title">
+              Reach Hotel Pooja Inn Pandharpur
+            </h2>
+            <p class="text-stone-600 text-xs sm:text-sm mt-1" data-i18n="loc_subtitle">
+              Conveniently situated on K.B.P. College Road, Gokul Nagar, Isbavi, Pandharpur, Maharashtra 413304.
+            </p>
+          </div>
+
+          <div class="space-y-4">
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-800 flex items-center justify-center shrink-0 text-sm mt-0.5">
+                📍
+              </div>
+              <div>
+                <span class="block text-xs font-bold text-stone-900" data-i18n="lbl_address">Hotel Address</span>
+                <p class="text-xs text-stone-600 leading-relaxed hotel-address-text">
+                  Plot No. 19, K.B.P. College Road, Gokul Nagar, Isbavi, near Chandrabhaga Bus Stand, Pandharpur, Maharashtra 413304
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0 text-sm mt-0.5">
+                📞
+              </div>
+              <div>
+                <span class="block text-xs font-bold text-stone-900" data-i18n="lbl_phone">Front Desk & WhatsApp</span>
+                <p class="text-xs text-stone-600">
+                  <a href="tel:919422678910" class="hover:text-amber-700 font-semibold hotel-phone-link hotel-phone-text">+91 94226 78910</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-indigo-100 text-indigo-800 flex items-center justify-center shrink-0 text-sm mt-0.5">
+                ⏰
+              </div>
+              <div>
+                <span class="block text-xs font-bold text-stone-900">Check-In / Check-Out</span>
+                <p class="text-xs text-stone-600">Check-in: 12:00 PM | Check-out: 10:00 AM (Early check-in subject to availability)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <a href="https://www.google.com/maps/place/Hotel+Pooja+Inn+Pandharpur/@17.6796458,75.3220648,17z/data=!3m1!4b1!4m9!3m8!1s0x3bc419e23143e1eb:0xf19ce3ce51952f30!5m2!4m1!1i2!8m2!3d17.6796458!4d75.3220648!16s%2Fg%2F11m6qzzgnd" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-semibold text-xs py-3 px-6 rounded-xl shadow transition-all hotel-map-link">
+              <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+              <span data-i18n="lbl_directions">Get Google Maps Directions</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Google Map Visual Card -->
+        <div class="lg:col-span-7">
+          <div class="rounded-3xl overflow-hidden border border-stone-300 shadow-lg bg-stone-100 h-80 sm:h-96 relative">
+            <iframe 
+              title="Hotel Pooja Inn Pandharpur Map"
+              src="https://maps.google.com/maps?q=17.6796458,75.3220648&hl=en&z=16&output=embed"
+              class="w-full h-full border-0"
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 10. FAQ ACCORDION -->
+  <!-- ========================================================================= -->
+  <section class="py-16 md:py-20 bg-stone-50 border-b border-stone-200">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl sm:text-3xl font-serif font-black text-stone-900 mb-2">Frequently Asked Questions</h2>
+        <p class="text-xs sm:text-sm text-stone-600">Quick answers to help you plan your stay at Hotel Pooja Inn Pandharpur.</p>
+      </div>
+
+      <div class="space-y-3">
+        
+        <details class="group bg-white p-4 rounded-xl border border-stone-200">
+          <summary class="flex justify-between items-center font-semibold text-xs sm:text-sm text-stone-900 cursor-pointer list-none">
+            <span>How far is Hotel Pooja Inn from Shri Vitthal Mandir?</span>
+            <span class="text-amber-600 transition-transform group-open:rotate-180">▼</span>
+          </summary>
+          <p class="text-xs text-stone-600 mt-3 leading-relaxed">
+            The hotel is approximately 1.8 km (around 5 to 7 minutes) from the main temple complex. Auto-rickshaws are readily available right outside the hotel at all times of day and night.
+          </p>
+        </details>
+
+        <details class="group bg-white p-4 rounded-xl border border-stone-200">
+          <summary class="flex justify-between items-center font-semibold text-xs sm:text-sm text-stone-900 cursor-pointer list-none">
+            <span>Is secure car parking available at the hotel?</span>
+            <span class="text-amber-600 transition-transform group-open:rotate-180">▼</span>
+          </summary>
+          <p class="text-xs text-stone-600 mt-3 leading-relaxed">
+            Yes! Unlike hotels located right in the narrow alleys near the temple where driving and parking are nearly impossible, Hotel Pooja Inn provides ample on-site private parking for private cars, SUVs, and passenger vans.
+          </p>
+        </details>
+
+        <details class="group bg-white p-4 rounded-xl border border-stone-200">
+          <summary class="flex justify-between items-center font-semibold text-xs sm:text-sm text-stone-900 cursor-pointer list-none">
+            <span>Is hot water available at 4:00 AM for Kakad Aarti?</span>
+            <span class="text-amber-600 transition-transform group-open:rotate-180">▼</span>
+          </summary>
+          <p class="text-xs text-stone-600 mt-3 leading-relaxed">
+            Yes, all our rooms have 24/7 hot water supply via geysers, specially ensured for pilgrims who wake up early for Kakad Aarti and holy snan.
+          </p>
+        </details>
+
+        <details class="group bg-white p-4 rounded-xl border border-stone-200">
+          <summary class="flex justify-between items-center font-semibold text-xs sm:text-sm text-stone-900 cursor-pointer list-none">
+            <span>Is there a lift (elevator) for elderly family members?</span>
+            <span class="text-amber-600 transition-transform group-open:rotate-180">▼</span>
+          </summary>
+          <p class="text-xs text-stone-600 mt-3 leading-relaxed">
+            Yes, our property is equipped with a modern elevator, making it very comfortable for senior citizens, grandparents, and warkari devotees to access upper floor rooms without climbing stairs.
+          </p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 11. FOOTER -->
+  <!-- ========================================================================= -->
+  <footer class="bg-slate-950 text-stone-400 text-xs py-12 border-t border-slate-900">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
+        
+        <div class="space-y-3 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-lg bg-amber-600 text-white font-serif font-black flex items-center justify-center text-sm">
+              P
+            </div>
+            <span class="font-serif font-black text-white text-base tracking-wide">HOTEL POOJA INN</span>
+          </div>
+          <p class="text-stone-400 text-xs max-w-md leading-relaxed" data-i18n="footer_desc">
+            Hotel Pooja Inn is your trusted pilgrimage lodging in Pandharpur, offering peace, cleanliness, and devoted hospitality near Shri Vitthal-Rukmini Mandir.
+          </p>
+          <div class="text-amber-400 text-[11px] font-medium" data-i18n="footer_direct_saving">
+            Direct Booking saves up to 20% on booking portal commissions!
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-serif font-bold text-white text-xs uppercase tracking-wider mb-3">Quick Navigation</h4>
+          <ul class="space-y-2">
+            <li><a href="#rooms-section" class="hover:text-amber-400 transition-colors">Rooms & Tariff</a></li>
+            <li><a href="#amenities-section" class="hover:text-amber-400 transition-colors">Pilgrim Facilities</a></li>
+            <li><a href="#darshan-section" class="hover:text-amber-400 transition-colors">Pandharpur Temple Timings</a></li>
+            <li><a href="#location-section" class="hover:text-amber-400 transition-colors">Location & Directions</a></li>
+            <li><a href="pitch-kit.html" class="text-indigo-400 hover:text-indigo-300 font-bold">Agency Pitch Kit (Close the Client)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-serif font-bold text-white text-xs uppercase tracking-wider mb-3">Contact Desk</h4>
+          <p class="text-stone-300 leading-relaxed mb-2 hotel-address-text">
+            K.B.P. College Road, Gokul Nagar, Isbavi, Pandharpur - 413304
+          </p>
+          <p class="text-stone-300">
+            Call: <a href="tel:919422678910" class="text-amber-400 hover:underline hotel-phone-text">+91 94226 78910</a>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="pt-6 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-3 text-stone-500 text-[11px]">
+        <div>
+          © 2026 Hotel Pooja Inn Pandharpur. <span data-i18n="footer_rights">All Rights Reserved.</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <span>॥ पुंडलिक वरदा हरी विठ्ठल, श्री ज्ञानदेव तुकाराम ॥</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- 12. STICKY MOBILE CONVERSION BAR (CRUCIAL FOR INDIAN HOTEL BOOKINGS) -->
+  <!-- ========================================================================= -->
+  <div class="md:hidden fixed bottom-0 inset-x-0 bg-white/95 backdrop-blur-md border-t border-stone-200 p-2 z-50 mobile-bottom-dock flex items-center gap-2">
+    <a href="tel:919422678910" class="flex-1 bg-slate-900 text-white text-xs py-3 rounded-xl font-bold flex items-center justify-center gap-2 shadow-sm hotel-phone-link">
+      <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"/></svg>
+      <span>Call Hotel</span>
+    </a>
+    <a href="https://wa.me/919422678910?text=Hello%20Hotel%20Pooja%20Inn%20Pandharpur,%20I%20want%20to%20book%20a%20room." target="_blank" class="flex-[1.5] bg-emerald-600 text-white text-xs py-3 rounded-xl font-bold flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/30 hotel-whatsapp-link">
+      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <span>Book on WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/translations.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
